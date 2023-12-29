@@ -24,8 +24,8 @@
   
 ## Reference
   ### Blockchain Simulator & Network-helper
+    https://github.com/zhayujie/blockchain-simulator
 
-https://github.com/zhayujie/blockchain-simulator
 
 
 
