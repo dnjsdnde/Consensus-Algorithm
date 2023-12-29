@@ -55,7 +55,7 @@
   
     export LD_LIBRARY_PATH=/usr/local/ssl/lib:$LD_LIBRARY_PATH
 
-  if you do not have `libpqs.so` in `/usr/local/lib`
+  if you do not have `liboqs.so` in `/usr/local/lib`
 
     cd ~/openssl
     ./Configure shared --prefix=/usr/local/ssl --openssldir=/usr/local/ssl linux-x86_64 -I/usr/local/include -L/usr/local/lib -DOQS_DIR=/usr/local
@@ -67,17 +67,38 @@
 
   install `liboqs`
 
+    sudo apt install astyle cmake gcc ninja-build libssl-dev python3-pytest python3-pytest-xdist unzip xsltproc doxygen graphviz python3-yaml valgrind
+    cd ~
+    git clone -b main https://github.com/openquantum-safe/liboqs.git
+    cd liboqs
+    mkdir build && cd build
+    cmake -GNinja -DBUILD_SHARED_LIBS=ON ..
+    ninja
+
   
 ## Getting Started
-  1. 
+  1. NS-3 library
+
+     1) edit `CMakeLists.txt` in `scratch` folder
+     2) asd
+     3) asdf
+     4) 
+  
+  3. Blockchain Simulator
+  4. Network Helper
+  5. Consensus Algorithm
+  6. NS-3 build
+  7. Run Simulator
+  8. if you want to change algorithm
   
 ## Reference
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
   ### [OpenSSL](https://askubuntu.com/questions/1462945/make-j-failing-for-oqs-openssl)
   ### [liboqs](https://github.com/open-quantum-safe/liboqs)
 
+## Contributor
+## License
 
-sudo apt install astyle cmake gcc ninja-build libssl-dev python3-pytest python3-pytest-xdist unzip xsltproc doxygen graphviz python3-yaml valgrind
 
 
 
