@@ -17,6 +17,13 @@
 
 
 ## Environment
+- Processor: Intel NUC(Intel i5-8295U CPU)
+- RAM: 16GB
+- OS: Ubuntu 20.04.6 LTS
+- Simulator: NS-3 (Network Simulator)
+  - version: ns-3.38-dirty
+- Editor: Visual Studio Code
+- Language: C++
 
 ## Installation
   ### NS-3 (version 3.38)
