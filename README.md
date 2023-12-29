@@ -2,9 +2,14 @@
 
 ## Contents
 - [사양]()
-- [Prerequisite]()
+- [Installation]()
+  - [NS-3 (version 3.38)]()
+  - [OpenSSL]()
+  - [liboqs]()
 - [Getting Started]()
 - [Reference]()
+
+## 사양
 
 ## Installation
   ### NS-3 (version 3.38)
@@ -13,7 +18,6 @@
     cd ns-3-dev
     git checkout -b ns-3.38-branch ns-3.38
 
-  ---
   
   ### OpenSSL
 
@@ -58,17 +62,19 @@
     make -j
     sudo make install
   
-  ---  
   
   ### liboqs
 
+  install `liboqs`
+
+  
 ## Getting Started
   1. 
   
 ## Reference
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
   ### [OpenSSL](https://askubuntu.com/questions/1462945/make-j-failing-for-oqs-openssl)
-    
+  ### [liboqs](https://github.com/open-quantum-safe/liboqs)
 
 
 
