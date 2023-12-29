@@ -1,7 +1,7 @@
 # Consensus-Algorithm
 
 ## Contents
-- [사양]()
+- [Environment]()
 - [Installation]()
   - [NS-3 (version 3.38)]()
   - [OpenSSL]()
@@ -17,7 +17,7 @@
 - [Reference]()
 
 
-## 사양
+## Environment
 
 ## Installation
   ### NS-3 (version 3.38)
