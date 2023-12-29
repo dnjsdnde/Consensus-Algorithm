@@ -17,13 +17,13 @@
 
 
 ## Environment
-- Processor: Intel NUC(Intel i5-8295U CPU)
-- RAM: 16GB
-- OS: Ubuntu 20.04.6 LTS
-- Simulator: NS-3 (Network Simulator)
-  - version: ns-3.38-dirty
-- Editor: Visual Studio Code
-- Language: C++
+- __Processor__: Intel NUC(Intel i5-8295U CPU)
+- __RAM__: 16GB
+- __OS__: Ubuntu 20.04.6 LTS
+- __Simulator__: NS-3 (Network Simulator)
+  - __Version__: ns-3.38-dirty
+- __Editor__: Visual Studio Code
+- __Language__: C++
 
 ## Installation
   ### NS-3 (version 3.38)
