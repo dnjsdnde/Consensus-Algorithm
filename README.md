@@ -17,16 +17,16 @@
   
   ### OpenSSL
 
-  install dependencies
+  install dependencies.
   
     sudo apt-get update
     sudo apt-get install -y build-essential git cmake python3 libssl-dev
 
-  clone `liboqs` repo
+  clone `liboqs` repo.
 
     git clone https://github.com/open-quantum-safe/liboqs.git
 
-  install `liboqs`
+  install `liboqs`.
 
     cd liboqs
     mkdir build
@@ -35,17 +35,28 @@
     ninja
     sudo ninja install
 
-  clone `OQS-OpenSSL` repo
+  clone `OQS-OpenSSL` repo.
 
     cd ~
     git clone https://github.com/open-quantum-safe/openssl.git
 
-  build `OQS-OpenSSL`
+  build `OQS-OpenSSL`.
 
     cd openssl
     ./Configure shared --prefix=/usr/local/ssl --openssldir=/usr/local/ssl linux-x86_64
     make -j
+    sudo make install
 
+  update `LD_LIBRARY_PATH` environment variable.
+  
+    export LD_LIBRARY_PATH=/usr/local/ssl/lib:$LD_LIBRARY_PATH
+
+  if you do not have `libpqs.so` in `/usr/local/lib`
+
+    cd ~/openssl
+    ./Configure shared --prefix=/usr/local/ssl --openssldir=/usr/local/ssl linux-x86_64 -I/usr/local/include -L/usr/local/lib -DOQS_DIR=/usr/local
+    make -j
+    sudo make install
   
   ---  
   
