@@ -13,7 +13,9 @@
   - [4. Consensus Algorithm](#4-consensus-algorithm)
   - [5. Run Simulator](#5-run-simulator)
   - [6. Change Algorithm](#6-change-algorithm)
-- [Reference]()
+- [Reference](#Reference)
+- [Contributor](#Contributor)
+- [License](#License)
 
 
 ## Environment
