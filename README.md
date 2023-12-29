@@ -23,7 +23,7 @@
   1. 
   
 ## Reference
-  ### [Blockchain Simulator & Network-helper](https://github.com/zhayujie/blockchain-simulator)
+  ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
     
 
 
