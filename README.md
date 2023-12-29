@@ -7,7 +7,15 @@
   - [OpenSSL]()
   - [liboqs]()
 - [Getting Started]()
+  - [add library]()
+  - [Blockchain Simulator]()
+  - [Network Helper]()
+  - [Consensus Algorithm]()
+  - [NS-3 build]()
+  - [Run Simulator]()
+  - [if you want to change algorithm.]()
 - [Reference]()
+
 
 ## 사양
 
@@ -18,6 +26,7 @@
     cd ns-3-dev
     git checkout -b ns-3.38-branch ns-3.38
 
+---
   
   ### OpenSSL
 
@@ -61,7 +70,8 @@
     ./Configure shared --prefix=/usr/local/ssl --openssldir=/usr/local/ssl linux-x86_64 -I/usr/local/include -L/usr/local/lib -DOQS_DIR=/usr/local
     make -j
     sudo make install
-  
+
+---
   
   ### liboqs
 
@@ -77,10 +87,10 @@
 
   
 ## Getting Started
-  1. NS-3 additional library (liboqs, openssl)
-
-     1) edit `CMakeLists.txt` in `scratch` folder
-     before
+  ### 1. add library (liboqs, openssl)
+  edit `CMakeLists.txt` in `scratch` folder
+  
+  before
 
     # Get source absolute path and transform into relative path
       get_filename_component(scratch_src ${scratch_src} ABSOLUTE)
@@ -142,19 +152,4 @@
 
 ## Contributor
 ## License
-
-# Get source absolute path and transform into relative path get_filename_component(scratch_src ${scratch_src} ABSOLUTE) get_filename_component(scratch_absolute_directory ${scratch_src} DIRECTORY) string(REPLACE "${PROJECT_SOURCE_DIR}" "${CMAKE_OUTPUT_DIRECTORY}"
-scratch_directory ${scratch_absolute_directory}
-)
-find_external_library( DEPENDENCY_NAME oqs HEADER_NAMES oqs.h LIBRARY_NAMES oqs SEARCH_PATHS "~/liboqs/build/lib/" )
-set(include_dir "~/liboqs/build/include/") include_directories(${include_dir}) link_libraries(${oqs_LIBRARIES})
-find_package(OpenSSL)
-build_exec(
-EXECNAME ${scratch_name}
-EXECNAME_PREFIX ${target_prefix}
-SOURCE_FILES "${source_files}"
-LIBRARIES_TO_LINK "${ns3-libs}" "${ns3-contrib-libs}" "${OPENSSL_LIBRARIES}" EXECUTABLE_DIRECTORY_PATH ${scratch_directory}/
-)
-
-
 
