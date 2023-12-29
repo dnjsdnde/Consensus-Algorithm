@@ -7,13 +7,13 @@
   - [OpenSSL]()
   - [liboqs]()
 - [Getting Started]()
-  - [add library]()
+  - [Add Library]()
   - [Blockchain Simulator]()
   - [Network Helper]()
   - [Consensus Algorithm]()
-  - [NS-3 build]()
+  - [NS-3 Build]()
   - [Run Simulator]()
-  - [if you want to change algorithm.]()
+  - [Change Algorithm]()
 - [Reference]()
 
 
@@ -87,7 +87,7 @@
 
   
 ## Getting Started
-  ### 1. add library (liboqs, openssl)
+  ### 1. Add Library (liboqs, OpenSSL)
   edit `CMakeLists.txt` in `scratch` folder
   
   before
@@ -137,13 +137,35 @@
   	  EXECUTABLE_DIRECTORY_PATH ${scratch_directory}/
   	)
 
+  ### 2. Blockchain Simulator
+  Move `block-simulator.cc` from `scratch` into `ns-3-dev/scratch`
+    
+    Change the ./ns-3-dev/src/application/CMakeLists.txt file
+
+  ### 3. Network Helper
+  Move `network-helper.cc` and `network.helper.h` from `network-helper` into `ns-3-dev/src/application/helper`
+
+  Add the following to the SOURCE_FILES list:
+
+    helper/network-helper.cc
+    
+  Add the following to the HEADER_FILES list:
+
+    helper/network-helper.h
+        
+  ### 4. Consensus Algorithm
+  Move `pow.cc` and `pow.h`(or you want) from `PQC_algorithms/PoW` into `ns-3-dev/src/application/model`
+  Add the following to the SOURCE_FILES list:
+
+    model/pow.cc
+    
+  Add the following to the HEADER_FILES list:
+
+    model/pow.h
   
-  3. Blockchain Simulator
-  4. Network Helper
-  5. Consensus Algorithm
-  6. NS-3 build
-  7. Run Simulator
-  8. if you want to change algorithm
+  ### 5. NS-3 Build
+  ### 6. Run Simulator
+  ### 7. Change algorithm
   
 ## Reference
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
