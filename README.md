@@ -77,12 +77,56 @@
 
   
 ## Getting Started
-  1. NS-3 library
+  1. NS-3 additional library (liboqs, openssl)
 
      1) edit `CMakeLists.txt` in `scratch` folder
-     2) asd
-     3) asdf
-     4) 
+     before
+
+    # Get source absolute path and transform into relative path
+      get_filename_component(scratch_src ${scratch_src} ABSOLUTE)
+      get_filename_component(scratch_absolute_directory ${scratch_src} DIRECTORY)
+      string(REPLACE "${PROJECT_SOURCE_DIR}" "${CMAKE_OUTPUT_DIRECTORY}"
+        scratch_directory ${scratch_absolute_directory}
+        )
+    
+    build_exec(
+      EXECNAME ${scratch_name}
+      EXECNAME_PREFIX ${target_prefix}
+    	SOURCE_FILES "${source_files}"
+    	LIBRARIES_TO_LINK "${ns3-libs}" "${ns3-contrib-libs}"
+    	EXECUTABLE_DIRECTORY_PATH ${scratch_directory}/
+  	)
+
+   after
+
+     # Get source absolute path and transform into relative path
+       get_filename_component(scratch_src ${scratch_src} ABSOLUTE)
+       get_filename_component(scratch_absolute_directory ${scratch_src} DIRECTORY)
+       string(REPLACE "${PROJECT_SOURCE_DIR}" "${CMAKE_OUTPUT_DIRECTORY}"
+         scratch_directory ${scratch_absolute_directory}
+         )
+  
+     find_external_library(
+       DEPENDENCY_NAME oqs
+       HEADER_NAMES oqs.h
+       LIBRARY_NAMES oqs
+       SEARCH_PATHS "~/liboqs/build/lib/"
+     )
+  
+    set(include_dir "~/liboqs/build/include/")
+    include_directories(${include_dir})
+    link_libraries(${oqs_LIBRARIES})
+    
+    find_package(OpenSSL)
+  
+    build_exec(
+  	  EXECNAME ${scratch_name}
+  	  EXECNAME_PREFIX ${target_prefix}
+  	  SOURCE_FILES "${source_files}"
+  	  LIBRARIES_TO_LINK "${ns3-libs}" "${ns3-contrib-libs}" "${OPENSSL_LIBRARIES}" "${oqs_LIBRARIES}"
+  	  EXECUTABLE_DIRECTORY_PATH ${scratch_directory}/
+  	)
+
   
   3. Blockchain Simulator
   4. Network Helper
