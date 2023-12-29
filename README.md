@@ -3,7 +3,7 @@
 ## Contents
 - [Environment](#environment)
 - [Installation](#installation)
-  - [NS-3 (version 3.38)](#ns-3-(version-3.38))
+  - [NS-3 (version 3.38)](#ns-3)
   - [OpenSSL](#openssl)
   - [liboqs](#liboqs)
 - [Getting Started](#getting-started)
