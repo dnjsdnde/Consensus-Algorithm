@@ -7,7 +7,7 @@
   - [OpenSSL](#openssl)
   - [liboqs](#liboqs)
 - [Getting Started](#getting-started)
-  - [1. Add Library](#1-add-library-liboqs-openssl)
+  - [1. Add Library (liboqs, OpenSSL)](#1-add-library-liboqs-openssl)
   - [2. Blockchain Simulator]()
   - [3. Network Helper]()
   - [4. Consensus Algorithm]()
