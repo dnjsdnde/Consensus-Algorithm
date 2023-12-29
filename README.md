@@ -3,7 +3,7 @@
 ## Contents
 - [Environment](#environment)
 - [Installation](#installation)
-  - [NS-3 (version 3.38)](#ns-3)
+  - [NS-3](#ns-3)
   - [OpenSSL](#openssl)
   - [liboqs](#liboqs)
 - [Getting Started](#getting-started)
@@ -26,7 +26,7 @@
 - __Language__: C++
 
 ## Installation
-  ### NS-3 (version 3.38)
+  ### NS-3
   
     git clone https://gitlab.com/nsnam/ns-3-dev.git
     cd ns-3-dev
