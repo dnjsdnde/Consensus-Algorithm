@@ -56,7 +56,7 @@
   
 ## Reference
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
-  ### OpenSSL
+  ### [OpenSSL](https://askubuntu.com/questions/1462945/make-j-failing-for-oqs-openssl)
     
 
 
