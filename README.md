@@ -11,7 +11,6 @@
   - [Blockchain Simulator]()
   - [Network Helper]()
   - [Consensus Algorithm]()
-  - [NS-3 Build]()
   - [Run Simulator]()
   - [Change Algorithm]()
 - [Reference]()
@@ -167,9 +166,23 @@
 
     model/pow.h
   
-  ### NS-3 Build
   ### Run Simulator
+    ./ns-3-dev/ns3 clean
+    ./ns-3-dev/ns3 configure
+    ./ns-3-dev/ns3 build
+    ./ns-3-dev/ns3 run blockchain-simulator
+     
   ### Change algorithm
+  if you want to change the algorithm, you should follow `Consensus Algorithm` part with file in `PQC_algorithms` you want.
+  And return the file to its original location. 
+
+  Also change the file as follow:
+  1. blockchain-simulator.cc
+  2. Network-helper.cc
+     
+  What need to change in 1, 2 is indicated in the file.
+  
+  Then, follow `Run Simulator` part
   
 ## Reference
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
