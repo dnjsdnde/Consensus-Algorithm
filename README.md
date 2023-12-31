@@ -146,7 +146,7 @@
   	)
 
   ### 2. Blockchain Simulator
-  Move `block-simulator.cc` from `scratch` into `ns-3-dev/scratch`
+  Move `blockchain-simulator.cc` from `scratch` into `ns-3-dev/scratch`
     
 
   ### 3. Network Helper
