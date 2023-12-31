@@ -145,12 +145,24 @@
   	  EXECUTABLE_DIRECTORY_PATH ${scratch_directory}/
   	)
 
-  ### 2. Blockchain Simulator
+  ### 2. Add hash function (SHA256, SHA512)
+  1. Move 'SHA256.cc' and 'SHA256.h' from SHA into 'ns-3-dev/src/application/model'.
+  
+  2. Change the ./ns-3-dev/src/application/CMakeLists.txt file
+  
+  Add the following to the `SOURCE_FILES` list:
+
+    model/sha256.cc
+    
+  Add the following to the `HEADER_FILES` list:
+
+    model/sha256.h
+
+  ### 3. Blockchain Simulator
   Move `blockchain-simulator.cc` from `scratch` into `ns-3-dev/scratch`
     
-
-  ### 3. Network Helper
-  1. Move `network-helper.cc` and `network.helper.h` from `network-helper` into `ns-3-dev/src/application/helper`
+  ### 4. Network Helper
+  1. Move `network-helper.cc` and `network.helper.h` from `network-helper` into `ns-3-dev/src/application/helper`.
 
   2. Change the ./ns-3-dev/src/application/CMakeLists.txt file
   
@@ -162,8 +174,8 @@
 
     helper/network-helper.h
         
-  ### 4. Consensus Algorithm
-  1. Move `pow.cc` and `pow.h`(or you want) from `PQC_algorithms/PoW` into `ns-3-dev/src/application/model`
+  ### 5. Consensus Algorithm
+  1. Move `pow.cc` and `pow.h`(or you want) from `PQC_algorithms/PoW` into `ns-3-dev/src/application/model`.
 
   2. Change the ./ns-3-dev/src/application/CMakeLists.txt file
      
@@ -175,13 +187,13 @@
 
     model/pow.h
   
-  ### 5. Run Simulator
+  ### 6. Run Simulator
     ./ns-3-dev/ns3 clean
     ./ns-3-dev/ns3 configure
     ./ns-3-dev/ns3 build
     ./ns-3-dev/ns3 run blockchain-simulator
      
-  ### 6. Change algorithm
+  ### 7. Change algorithm
   if you want to change the algorithm, you should follow `Consensus Algorithm` part with file in `PQC_algorithms` you want.
   And return the file to its original location. 
 
