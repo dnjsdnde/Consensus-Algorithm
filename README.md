@@ -197,6 +197,7 @@
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
   ### [OpenSSL](https://askubuntu.com/questions/1462945/make-j-failing-for-oqs-openssl)
   ### [liboqs](https://github.com/open-quantum-safe/liboqs)
+  ### [NS-3](https://www.nsnam.org/)
   ### [PoW(Proof-of-Work)](https://bitcoin.org/bitcoin.pdf)
   ### [PoS(Proof-of-Stake)](https://cryptodeep.ru/doc/paper.pdf)
   ### [PoL(Proof-of-Luck)](https://dl.acm.org/doi/pdf/10.1145/3007788.3007790)
