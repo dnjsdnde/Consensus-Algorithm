@@ -206,6 +206,6 @@
   ### [PQ-DPoL Benchmark](https://kiss.kstudy.com/Detail/Ar?key=4059251)
 
 ## Collaborator
-  ### [KangSquand]()
+  ### [KangSquand](https://github.com/KangSquad)
 ## License
 https://github.com/pr0f3ss/SHA/blob/master/src/SHA512.cpp#L45
