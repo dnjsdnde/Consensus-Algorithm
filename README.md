@@ -8,6 +8,7 @@
   - [liboqs](#liboqs)
 - [Getting Started](#getting-started)
   - [1. Add Library (liboqs, OpenSSL)](#1-add-library-liboqs-openssl)
+  - [2. Add hash function (SHA256, SHA512)](#2-Add-hash-function-(SHA256,-SHA512))
   - [2. Blockchain Simulator](#2-blockchain-simulator)
   - [3. Network Helper](#3-network-helper)
   - [4. Consensus Algorithm](#4-consensus-algorithm)
