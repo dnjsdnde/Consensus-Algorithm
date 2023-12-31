@@ -216,7 +216,7 @@
   ### [PoET(Proof-of-Elapsed Time)](https://www.researchgate.net/profile/Lin-Chen-96/publication/320246838_On_Security_Analysis_of_Proof-of-Elapsed-Time_PoET/links/5cd74989299bf14d958df857/On-Security-Analysis-of-Proof-of-Elapsed-Time-PoET.pdf)
   ### [PQ-DPoL(Post-Quantum Delegated Proof-of-Luck)]()
   ### [PQ-DPoL Benchmark](https://kiss.kstudy.com/Detail/Ar?key=4059251)
-  ### [SHA256](https://github.com/System-Glitch/SHA256.)
+  ### [SHA256](https://github.com/System-Glitch/SHA256)
   ### [SHA512](https://github.com/pr0f3ss/SHA)
 
 ## Collaborator
