@@ -205,6 +205,7 @@
   ### [PQ-DPoL(Post-Quantum Delegated Proof-of-Luck)]()
   ### [PQ-DPoL Benchmark](https://kiss.kstudy.com/Detail/Ar?key=4059251)
 
-## Contributor
+## Collaborator
+  ### [KangSquand]()
 ## License
 https://github.com/pr0f3ss/SHA/blob/master/src/SHA512.cpp#L45
