@@ -197,7 +197,10 @@
   ### [Blockchain Simulator & Network Helper](https://github.com/zhayujie/blockchain-simulator)
   ### [OpenSSL](https://askubuntu.com/questions/1462945/make-j-failing-for-oqs-openssl)
   ### [liboqs](https://github.com/open-quantum-safe/liboqs)
-  ### [PoET(Proof-of-Elapsed Time](https://www.researchgate.net/profile/Lin-Chen-96/publication/320246838_On_Security_Analysis_of_Proof-of-Elapsed-Time_PoET/links/5cd74989299bf14d958df857/On-Security-Analysis-of-Proof-of-Elapsed-Time-PoET.pdf)
+  ### [PoW(Proof-of-Work)](https://bitcoin.org/bitcoin.pdf)
+  ### [PoS(Proof-of-Stake)](https://cryptodeep.ru/doc/paper.pdf)
+  ### [PoL(Proof-of-Luck)](https://dl.acm.org/doi/pdf/10.1145/3007788.3007790)
+  ### [PoET(Proof-of-Elapsed Time)](https://www.researchgate.net/profile/Lin-Chen-96/publication/320246838_On_Security_Analysis_of_Proof-of-Elapsed-Time_PoET/links/5cd74989299bf14d958df857/On-Security-Analysis-of-Proof-of-Elapsed-Time-PoET.pdf)
 
 ## Contributor
 ## License
