@@ -159,6 +159,10 @@
 
     model/sha256.h
 
+  3. Add `#include "SHA256.h"` to the `pow.cc` file.
+  
+    #include "SHA256.h"
+
   ### 3. Blockchain Simulator
   Move `blockchain-simulator.cc` from `scratch` into `ns-3-dev/scratch`
     
