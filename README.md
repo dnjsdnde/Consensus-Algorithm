@@ -202,6 +202,7 @@
   ### [PoS(Proof-of-Stake)](https://cryptodeep.ru/doc/paper.pdf)
   ### [PoL(Proof-of-Luck)](https://dl.acm.org/doi/pdf/10.1145/3007788.3007790)
   ### [PoET(Proof-of-Elapsed Time)](https://www.researchgate.net/profile/Lin-Chen-96/publication/320246838_On_Security_Analysis_of_Proof-of-Elapsed-Time_PoET/links/5cd74989299bf14d958df857/On-Security-Analysis-of-Proof-of-Elapsed-Time-PoET.pdf)
+  ### [PQ-DPoL Benchmark](file:///home/nuc/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/PQ-DPoL%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%96%91%EC%9E%90%20%EB%82%B4%EC%84%B1%20%EC%A0%84%EC%9E%90%EC%84%9C%EB%AA%85%20%EB%B2%A4%EC%B9%98%EB%A7%88%ED%82%B9.pdf)
 
 ## Contributor
 ## License
